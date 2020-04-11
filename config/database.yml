@@ -1,0 +1,18 @@
+default: &default
+  adapter: postgresql
+  encoding: unicode
+  pool: <%= ENV.fetch("RAILS_MAX_THREADS") { 5 } %>
+
+development:
+  <<: *default
+  database: gyakuten_clone_group19_development
+
+test:
+  <<: *default
+  database: gyakuten_clone_group19_test
+
+production:
+  <<: *default
+  database: gyakuten_clone_group19_production
+  username: gyakuten_clone_group19
+  password: <%= ENV['GYAKUTEN_CLONE_GROUP_DATABASE_PASSWORD'] %>
