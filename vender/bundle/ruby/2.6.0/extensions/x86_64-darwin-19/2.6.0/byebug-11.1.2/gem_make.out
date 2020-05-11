@@ -1,0 +1,19 @@
+current directory: /Users/takao.yamasaki/Desktop/gyakuten_clone_group19/vender/bundle/ruby/2.6.0/gems/byebug-11.1.2/ext/byebug
+/Users/takao.yamasaki/.rbenv/versions/2.6.6/bin/ruby -I /Users/takao.yamasaki/.rbenv/versions/2.6.6/lib/ruby/2.6.0 -r ./siteconf20200511-24730-1232ljt.rb extconf.rb
+creating Makefile
+
+current directory: /Users/takao.yamasaki/Desktop/gyakuten_clone_group19/vender/bundle/ruby/2.6.0/gems/byebug-11.1.2/ext/byebug
+make "DESTDIR=" clean
+
+current directory: /Users/takao.yamasaki/Desktop/gyakuten_clone_group19/vender/bundle/ruby/2.6.0/gems/byebug-11.1.2/ext/byebug
+make "DESTDIR="
+compiling breakpoint.c
+compiling byebug.c
+compiling context.c
+compiling locker.c
+compiling threads.c
+linking shared-object byebug/byebug.bundle
+
+current directory: /Users/takao.yamasaki/Desktop/gyakuten_clone_group19/vender/bundle/ruby/2.6.0/gems/byebug-11.1.2/ext/byebug
+make "DESTDIR=" install
+/usr/bin/install -c -m 0755 byebug.bundle ./.gem.20200511-24730-gbegrj/byebug
