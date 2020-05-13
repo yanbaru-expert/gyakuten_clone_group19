@@ -13,11 +13,7 @@
 
   <body>
     <header>
-      <% if user_signed_in? %>
-        <%= render 'layouts/navibar' %>
-      <% else %>
-        <%= render 'layouts/navibar' %>
-      <% end %>
+    <%= render 'layouts/navibar' %>
     </header>
   <main>
     <%= yield %>
