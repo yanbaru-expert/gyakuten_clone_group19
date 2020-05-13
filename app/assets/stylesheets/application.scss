@@ -1,1 +1,12 @@
+/*
+ *= require_tree .
+ *= require_self
+ */
+
 @import "bootstrap/scss/bootstrap";
+
+main {
+  max-width: 700px;
+  margin: 0 auto;
+  padding: 1rem;
+}
