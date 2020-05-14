@@ -9,7 +9,7 @@
               Rails
             </a>
             <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-              <%= link_to "動画教材", "/movies", class: 'nav-item nav-link active text-primary' %>
+              <%= link_to "動画教材", root_path, class: 'nav-item nav-link active text-primary' %>
               <%= link_to "テキスト教材", "#", class: 'nav-item nav-link active text-primary' %>
               <%= link_to "ライブコーディング", "#", class: 'nav-item nav-link active text-primary' %>
               <%= link_to "質問集", "#", class: 'nav-item nav-link active text-primary' %>
@@ -23,9 +23,12 @@
           <li class="nav-item"> <%= link_to "動画編集講座", '#', class: 'nav-item nav-link active' %> </li>
           <li class="nav-item"> <%= link_to "ライティング講座", '#', class: 'nav-item nav-link active' %> </li>
           <li class="nav-item"> <%= link_to "LINE@", '#', class: 'nav-item nav-link active' %> </li>
-          <li class="nav-item"> <%= link_to "ログイン", new_user_session_path, class: 'nav-item nav-link active' %> </li>
-          <li class="nav-item"> <%= link_to "ログアウト", destroy_user_session_path, method: :delete, class: 'nav-item nav-link active' %> </li>
-          <li class="nav-item"> <%= link_to "新規登録", new_user_registration_path, class: 'nav-item nav-link active' %> </li>
+          <% if user_signed_in? %>
+            <li class="nav-item"> <%= link_to "ログアウト", destroy_user_session_path, method: :delete, class: 'nav-item nav-link active' %> </li>
+          <% else %>
+            <li class="nav-item"> <%= link_to "ログイン", new_user_session_path, class: 'nav-item nav-link active' %> </li>
+            <li class="nav-item"> <%= link_to "新規登録", new_user_registration_path, class: 'nav-item nav-link active' %> </li>
+          <% end %>
         </ul>
       </div>
     </nav>
