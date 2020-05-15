@@ -34,4 +34,20 @@ namespace  :import_csv do
       end
     end
 
+    desc "質問集をインポートするタスク"
+    task question_data: :environment do
+
+      list = Import.csv_data(path:"db/csv_data/question_data.csv")
+
+      puts "質問集インポート開始"
+
+      # 例外処理
+      begin
+        Question.create!(list)
+        puts "インポート完了"
+      rescue ActiveModel::UnknownAttributeError => invalid
+        puts "インポートに失敗：UnknownAttributeError"
+      end
+    end
+
 end
