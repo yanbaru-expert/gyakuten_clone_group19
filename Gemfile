@@ -20,7 +20,6 @@ gem 'pry-rails'
 gem 'devise'
 
 gem 'devise-i18n'
-gem 'devise-i18n-views'
 gem 'rails-i18n'
 
 group :development, :test do
