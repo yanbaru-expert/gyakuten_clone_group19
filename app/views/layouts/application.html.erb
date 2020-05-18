@@ -13,10 +13,12 @@
 
   <body>
     <header>
-    <%= render 'layouts/navibar' %>
+      <%= render 'layouts/navibar' %>
     </header>
   <main>
-    <%= yield %>
+    <div id="container">
+          <%= yield %>
+    </div>
   </main>
   <footer>
 
