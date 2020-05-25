@@ -5,3 +5,42 @@ main {
   margin: 0 auto;
   padding: 1rem;
 }
+
+#container  {
+  margin: 0 auto;
+  padding: 50px 0 160px 0;  
+}
+
+#container h1 {
+  font-size: 30px;
+  padding: 20px 0 10px 0;
+}
+
+#container p {
+  font-size: 17px;
+  width: 710px;
+  margin: 0 auto;
+  padding-bottom: 15px; 
+}
+
+.text-center {
+  text-align: center;
+}
+
+.table-container{
+  width: 710px;
+  margin: 0 auto;
+}
+
+.aws-table-head{
+  background-color: #5D99FF;
+}
+
+.w-1 {
+  width: 10%;
+}
+
+.w-5 {
+  width: 50%;
+}
+
