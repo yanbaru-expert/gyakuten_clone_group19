@@ -12,9 +12,9 @@
             <th class="w-5">内容</th>
           </tr>
           <tbody>
-            <% @awstexts.each_with_index do |awstext,i|%>
+            <% @awstexts.each.with_index(1) do |awstext,i|%>
               <tr>
-                <td><%= i+1 %></td>
+                <td><%= i %></td>
                 <td><%= awstext.title %></td>
               </tr>
             <%end%>
