@@ -1,8 +1,8 @@
 <div class="text-center">
   <div class="col-xs-12">
-      <% @movies.each.with_index(1) do |movie,i|%>
+      <% @movies.each.with_index(@movies.offset_value + 1) do |movie,i|%>
         <div class="movie-title">
-            Lv.<%= (@movies.current_page * 10) + i -10 %>：<%= movie.title %>
+            Lv.<%= i %>：<%= movie.title %>
         </div>
         <div class="movie-contents">
             <iframe width="560" height="315" src=<%= movie.url %> frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen=""></iframe>
