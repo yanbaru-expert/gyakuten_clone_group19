@@ -1,9 +1,6 @@
-<% if user_signed_in? %>
-    <div class="alert alert-success" role="alert">
-      <%= flash[:notice] %>
-    </div>
-<% else %>
-    <div class="alert alert-danger" role="alert">
-      <%= flash[:alert] %>
-    </div>
+<% flash.each do |msg_type, msg| %>
+  <div class="alert alert-<%= msg_type %>" role="alert">
+    <a href="#" class="close" data-dismiss="alert">×</a>
+    <%= msg %>
+  </div>
 <% end %>
