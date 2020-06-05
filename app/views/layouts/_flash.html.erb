@@ -1,0 +1,9 @@
+<% if user_signed_in? %>
+    <div class="alert alert-success" role="alert">
+      <%= flash[:notice] %>
+    </div>
+<% else %>
+    <div class="alert alert-danger" role="alert">
+      <%= flash[:alert] %>
+    </div>
+<% end %>
