@@ -1,6 +1,6 @@
 <% @questions.each do |question|%>
   <div class="card w-90">
-    <a href="/show.html.erb">
+    <%=link_to question_path(question), class: "card-link" do %>
       <div class="card-body">
         <div class="col-md-7">
           <h5 class="card-title"><%= question.title %></h5>
@@ -9,6 +9,6 @@
           <p class="card-time"> <%= question.created_at.strftime("質問日 %Y年%m月%d日") %></p>
         </div>
       </div>
-    </a>
+    <% end %>
   </div>
 <% end %>
