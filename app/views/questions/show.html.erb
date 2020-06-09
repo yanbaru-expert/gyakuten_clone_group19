@@ -1,6 +1,7 @@
-<%
-  text =<<~TEXT
-    
-  TEXT
- %>
-<%= markdown(text).html_safe %>
+<div class="title">
+  <%= markdown(@question.title).html_safe %>
+</div>
+
+<div class="detail">
+  <%= markdown(@question.detail).html_safe %>
+</div>
