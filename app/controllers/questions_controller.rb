@@ -3,6 +3,10 @@ class QuestionsController < ApplicationController
     @questions = Question.all
   end
 
+  def show
+    @question = Question.find(params[:id])
+  end
+
   def create
     @question = Question.new(question_params)
     if @question.save
@@ -18,7 +22,5 @@ class QuestionsController < ApplicationController
   def question_params
     params.permit(:title,:detail)
   end
-
-
 
 end
