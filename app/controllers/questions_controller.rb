@@ -13,6 +13,7 @@ class QuestionsController < ApplicationController
       flash[:notice]="登録に成功しました"
       redirect_to action: :index
     else
+      flash[:alert]="質問を入力してください"
       @questions = Question.all
       render action: :index
     end
