@@ -7,7 +7,7 @@ main {
 }
 
 // awsテキスト教材
-#container  {
+#container {
   margin: 0 auto;
   padding: 50px 0 160px 0;
 }
@@ -28,13 +28,13 @@ main {
   text-align: center;
 }
 
-.table-container{
+.table-container {
   width: 710px;
   margin: 0 auto;
 }
 
-.aws-table-head{
-  background-color: #5D99FF;
+.aws-table-head {
+  background-color: #5d99ff;
 }
 
 .w-1 {
@@ -46,25 +46,25 @@ main {
 }
 
 // awsテキスト詳細ページ
-.aws_content{
+.aws_content {
   width: 710px;
   margin: 0 auto;
 }
 
 // 動画教材ページ
-.text-center{
+.text-center {
   text-align: center;
 }
 
-.movie-title{
+.movie-title {
   font-size: 20px;
 }
 
-.movie-contents{
+.movie-contents {
   padding-bottom: 70px;
 }
 
-.pagination{
+.pagination {
   justify-content: center;
   padding-bottom: 140px;
 }
@@ -96,9 +96,9 @@ main {
 }
 
 .card-time {
-color: #a9a9a9;
-text-align: right;
-font-size: 17px;
+  color: #a9a9a9;
+  text-align: right;
+  font-size: 17px;
 }
 
 // フラッシュ
@@ -112,4 +112,23 @@ font-size: 17px;
 
 .alert-alert {
   @extend .alert-danger;
+}
+
+// questionページ
+.question-container {
+  width: 710px;
+}
+
+.question-container h1 {
+  padding: 20px 0 10px 0;
+  font-size: 30px;
+}
+
+.question-title,
+.question-detail {
+  display: block;
+}
+
+.form-control {
+  display: block;
 }
