@@ -12,7 +12,6 @@
     <% @solutions.each.with_index(1) do |solution,i|%>
       <h3><%= "【回答 #{i}】" %></h3>
       <%= markdown(solution.content).html_safe%>
-      <%#= markdown(solution.content).html_safe %>
     <% end %>
   </div>
 

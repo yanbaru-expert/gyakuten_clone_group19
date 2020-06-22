@@ -8,7 +8,7 @@ class SolutionsController < ApplicationController
       redirect_to question_path(@question.id)
     else
       flash[:alert]="回答を入力してください"
-      @solutions = Solution.where(question_id: @question.id)
+      @solutions = @question.solutions
       render "questions/show"
     end
   end
